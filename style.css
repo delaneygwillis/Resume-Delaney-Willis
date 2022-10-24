@@ -1,20 +1,39 @@
-body { background-color: #ffefdb; font-family: 'Lora', serif; margin-top: 50px; margin-bottom: 50px; margin-right: 150px; margin-left: 150px;}
+.grid-container { display:  grid;
+       gap: 10px;
+       margin: 50px;
+       padding: 50px;
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr;
+       background-color: #ffefdb;
+
+      font-family: 'Lora', serif;
+    }
+
+nav {
+      display: inline-block;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      margin: 10px;
+      padding: 50px; }
+
+.intro { grid-column-start: 1; grid-column-end: 3; grid-row-start: 2; grid-row-end: 7;}
+.edu { grid-column-start: 1; grid-column-end:2; grid-row-start: 2; grid-row-end: 3; }
+.skill { grid-column-start: 2; grid-column-end:3; grid-row-start: 2; grid-row-end: 3; }
+.exp {  grid-column-start: 1; grid-column-end:3; grid-row-start: 3; grid-row-end: 4; }
+footer {grid-column-start: 1; grid-column-end: 3; grid-row-start: 10; grid-row-end: 11;}
+
 
 h1 { font-size: xx-large; }
 
 h2 {font-size: large;}
 
-h1, h2 {color: #FAF9F6; letter-spacing: 5px; text-transform: uppercase;}
+h1, h2 {color: #4169E1;; letter-spacing: 5px; text-transform: uppercase;}
 
 h3 { color:#4169E1; letter-spacing: 3px; text-transform: uppercase;}
 
-h6 { font-size:  large; padding-left: 50px }
-
-nav {display: inline; text-transform: uppercase; padding: 20px; background-color: #FAF9F6; margin-left: 20px; margin-right: 20px; margin-bottom: 20px;}
-
-ul { list-style-type: circle; }
-
-#info { text-transform: uppercase; }
+h6 { font-size:  large; margin: 15px}
 
 #tworows{
   columns: 2;
@@ -22,19 +41,20 @@ ul { list-style-type: circle; }
   -moz-columns: 2;
 }
 
-main { background-color:#FAF9F6; padding: 50px; margin:20px;}
+ul { list-style-type: circle; }
 
-
-div { margin: 20px; text-align: center; display: block; padding: 50px; background-color: #4169E1; color: #FAF9F6;}
+#info { text-transform: uppercase; }
 
 
 img { display: inline; border-style: solid; border-color:#FAF9F6;}
 
-footer { padding-left: 20px; padding-top: 10px; padding-bottom: 30px; background-color: #FAF9F6; margin: 20px;} 
 
-a { display: inline-block; padding: 10px; background-color:#FAF9F6;}
+
+footer { padding-left: 20px; padding-top: 10px; padding-bottom: 10px; background-color: #FAF9F6; margin: 20px;} 
+
+a { background-color:#FAF9F6;}
+
 a:visited { color: #4169E1; }
 
 a:hover { color: #6495ED; }
-
 
